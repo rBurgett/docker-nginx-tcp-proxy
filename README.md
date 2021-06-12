@@ -1,5 +1,5 @@
 # docker-nginx-tcp-proxy
-docker-nginx-tcp-proxy
+docker-nginx-tcp-proxy compiles NGINX with the streams and SSL preread modules for creating TCP proxies including TLS proxies without termination.
 
 ## Build Image
 ```bash
@@ -13,7 +13,7 @@ docker run -d \
 -p 443:443 \
 -v [host sites-enabled path]:/etc/nginx/sites-enabled \
 -v [host streams-enabled path]:/etc/nginx/streams-enabled \
---name [instance name] \
+--name [container name] \
 [image name]
 ```
 
